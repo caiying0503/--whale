@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>工作進度表</title>
+    <style>
+        ul {
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: rgb(245, 249, 237);
+            position: fixed;
+            top: 0;
+        }
+
+        li {
+            float: left;
+            /* border-right: 2px dashed rgb(221, 159, 159); */
+            border-bottom: 4px solid rgb(221, 159, 159);
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: rgb(112, 110, 110);
+            text-align: center;
+            padding: 10px 50px;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        li a:hover {
+            background-color: rgb(252, 253, 191);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href='#1'>預期進度表</a></li>
+        <li><a href='#2'>實際進度表</a></li>
+
+    </ul>
+
+    <br><br><br><br>
+
+
+    <!-- 預期進度紀錄表 -->
+    <table border="1" align="center">
+        <caption>
+            <h1 id="1"><span style="background-color: rgb(213, 230, 248);">-預期進度紀錄表-</span></h1>
+        </caption>
+        <tr>
+            <td align="center">❶ 2022/11/29</td>
+            <td align="center">❷ 2022/12/6</td>
+            <td align="center">❸ 2022/12/13</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                    製作頂端動態導航欄<br>
+                </p>
+
+                <hr style="border-top: 2px dashed;">
+
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                    1. 繳交2份網頁檔(檔名:母標籤.子標籤.html)<br>
+                    2. 繳交各文章(2張)的代表圖片
+                </p>
+            </td>
+            <td>
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                    1. 設計logo封面圖<br>
+                    2. 架構排置比例規劃
+                </p>
+                
+                <hr style="border-top: 2px dashed;">
+
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                    1. 繳交2份網頁檔<br>
+                    2. 繳交各文章(2張)的代表圖片
+                </p>
+            </td>
+
+            <td>
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                    1. 設置照片輪播<br>
+                    2. 設定首頁圖片大小(熱門文章、更多文章)
+                </p>
+
+                <hr style="border-top: 2px dashed;">
+
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                    1. 繳交2份網頁檔<br>
+                    2. 繳交各文章(1份1張)的代表圖片
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">❹ 2022/12/20</td>
+            <td align="center">❺ 2022/12/26</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                    1. 建立排行榜、社群媒體及廣告區塊<br>
+                    2. 美化網頁
+                </p>
+                
+                <hr style="border-top: 2px dashed;">
+
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                    製作內頁組期末報告PPT
+                </p>
+            </td>
+            <td>
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                    製作架構組期末報告PPT<br>
+                </p>
+
+                <hr style="border-top: 2px dashed;">
+
+                <p>
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                    製作內頁組期末報告PPT
+                </p>
+
+                <p>
+                    (12/25 11:59前需繳交，視同缺交，但可補交)<br>
+                    (12/27 11:59前繳交，視同補交)
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- 實際進度紀錄表 -->
+    <table border="1" align="center">
+        <caption>
+            <h1 id="2"><span style="background-color: rgb(213, 230, 248);">-實際進度紀錄表-</span></h1>
+        </caption>
+        <thead>
+            <tr>
+                <td align="center">❶ 2022/11/29</td>
+                <td align="center">❷ 2022/12/6</td>
+                <td align="center">❸ 2022/12/13</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        製作頂端動態導航欄 (HTML、CSS) :<br>
+                        1. 鼠標滑動至母標處可展開次選單<br>
+                        2. 點選子標項目可連結到內頁組製作的文章網頁<br>
+                        3. 鼠標滑入可使按鈕變色
+                    </p>
+                    <hr style="border-top: 2px dashed;">
+                    <p>
+                        <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                        <br>
+                        林姿妤 : 提交「2份」網頁檔及「2份」文章代表圖<br>
+                        (主題 : 星座-火向、美食-飲料)(已達成本週進度)<br>
+                        <br>
+                        曾家榆 : 提交「6份」網頁檔及「6份」文章代表圖<br>
+                        (主題 : 虛擬直播- alban -mysta - sonny、
+                        平價美妝- Etude House-Romand- I’M MEME)(已達成本週進度)
+                        <br>
+                        <br>
+                        蔡芸喬 : 提交「1份」網頁檔及「1份」文章代表圖<br>
+                        (主題 : 童話-小紅帽)(缺交1份網頁+首頁圖)
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        1. 設計及設定部落格logo<br>
+                        2. 設計及建構部落格架構(header、container)
+                    </p>
+                    <hr style="border-top: 2px dashed;">
+                    <p>
+                        <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                        <br>
+                        林姿妤 : 提交「2份」網頁檔及「2份」文章代表圖<br>
+                        (主題 : 星座-水向、星座-風向)(已達成本週進度)
+                        <br><br>
+                        曾家榆 : (已達成本週進度)
+                        <br><br>
+                        蔡芸喬 : 提交「3份」網頁檔及「3份」文章代表圖<br>
+                        (主題 : 童話-三隻小豬、童話-國王的新衣、寵物-養狗須知)<br>
+                        (補11/29的進度1份 + 提交12/6的進度2份)
+                    </p>
+                </td>
+
+                <td>
+                    <P>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        1. 設置照片輪播<br>
+                        2. 配置首頁圖片大小(熱門文章、更多文章)<br>
+                        3. 設置圖片及標題超連結(熱門文章、更多文章)<br>
+                        4. 透過群組達成圖片排版效果(熱門文章、更多文章)
+                    </P>
+                    <hr style="border-top: 2px dashed;">
+                    <p>
+                        <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                        <br>
+                        林姿妤 : (缺交2份網頁+首頁圖)<br>
+                        <br>
+                        曾家榆 : (已達成本週進度)<br>
+                        <br>
+                        蔡芸喬 : 提交「1份」網頁檔及「1份」文章代表圖<br>
+                        (主題 : 寵物-貓) (缺交1份網頁+首頁圖)
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">❹ 2022/12/16</td>
+                <td align="center">❺ 2022/12/20</td>
+                <td align="center">❻ 2022/12/26</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        1. 做排行榜動態邊框特效<br>
+                        2. 設計排行榜按鈕動態特效<br>
+                        3. 創立部落格IG帳號並內嵌IG貼文<br>
+                        4. 設置標籤雲
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        1. 設立聳動文章標題<br>
+                        2. 建立關於我們(子標:工作進度表、網頁LOGO歷程)的網頁
+                    </p>
+                    <hr style="border-top: 2px dashed;">
+                    <p>
+                        <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                        <br>
+                        林姿妤 : 提交「2份」網頁檔及「2份」文章代表圖<br>
+                        (主題 : 美食-甜點、美食-西餐)<br>
+                        (補12/13的進度2份)
+                        <br><br>
+                        曾家榆 : (已達成本週進度)
+                        <br><br>
+                        蔡芸喬 : 提交「1份」網頁檔及「1份」文章代表圖<br>
+                        (主題 : 寵物-鼠)<br>
+                        (補12/13的進度1份)
+
+                    </p>
+                </td>
+                <td>
+                    <span style="background-color: rgb(247, 243, 183);">架構組:</span><br>
+                        製作期末報告架構組PPT
+
+                    <hr style="border-top: 2px dashed;">
+
+                    <span style="background-color: rgb(247, 243, 183);">內頁組:</span><br>
+                        製作期末報告內頁組PPT
+
+                </td>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>
